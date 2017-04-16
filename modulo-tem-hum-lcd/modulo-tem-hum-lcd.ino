@@ -45,10 +45,12 @@ void loop(){
   if (val == LOW) {         // check if the input is HIGH (button released)
     if (light == 0) {
       light = 1;
+      lcd.setBacklight(HIGH);
     } else {
       light = 0;
+      lcd.setBacklight(LOW);
     } 
-    delay(600);
+    delay(300);
   } 
 
   float h = dht.readHumidity();
@@ -73,12 +75,6 @@ void loop(){
     lcd.print(t);
     lcd.setCursor(9,1);
     lcd.print("C");
-  }
-
-  if (light == 1) {
-    lcd.setBacklight(HIGH);
-  } else {
-    lcd.setBacklight(LOW);
   }
 
 }                
