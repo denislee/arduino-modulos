@@ -25,7 +25,7 @@ void setup()
   // Informacoes iniciais de data e hora
   // Apos setar as informacoes, comente a linha abaixo
   // (segundos, minutos, hora, dia da semana, dia do mes, mes, ano)
-  myRTC.setDS1302Time(00, 58, 23, 2, 17, 11, 2014);
+//  myRTC.setDS1302Time(00, 42, 17, 6, 15, 11, 2017);
 }
 
 void loop()  
